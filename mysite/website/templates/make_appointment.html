@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<html>
+<br>
+<h2>Make an Appointment</h2>
+<br>
+<hr>
+
+<head>
+    <meta charset="utf-8">
+  </head>
+  {% if submitted %}
+    Your input was saved succesfully! Our receptionist will call you to confirm the appointment or discuss other time slots.
+  {% else %}
+  <form action="" method=POST>
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <hr><br>
+
+    <input type="submit" value = "Submit" class = "btn btn-secondary">
+  </form>
+  <p style = 'margin-top: 20px; font-size: 0.8em; text-align: center;'>Note: The time and date you have chosen may not be available, you will discuss more information with our receptionist.</p>
+<!-- <form action="" method=POST >
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <br>
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <br>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email"><br>
+  <br>
+  <label for="phone">Phone:</label><br>
+  <input type="text" id="phone" name="phone"><br>
+  <br>
+<label for="services">Choose a service:</label>
+
+<select name="services" id="sv">
+  {% for service in services%}  
+  <option value=""> {{service.service}} </option>
+  {% endfor %}
+</select>
+<br>
+<br>
+  <label for="appointment-date">Appointment Date:</label><br>
+  <input type="date" id="appointment-date" name="appointment-date"><br>
+  <br>
+  <label for="appointment-time">Appointment Time:</label><br>
+  <input type="time" id="appointment-time" name="appointment-time"><br>
+  <br>
+  <input type="submit" value="Submit">
+</form>  -->
+  {% endif %}
+</html>
+
+{% endblock %}

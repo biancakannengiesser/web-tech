@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<html>
+<head>
+	<style>
+h2 {
+	color: #8b4513   ;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #002b36 ;
+  background-color: #FFFAFA ;
+  text-align: center;
+}
+
+h1, h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+ul {
+  text-align: left;
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+	</style>
+  <title>Salon Services</title>
+</head>
+<body>
+  <h1 style = "text-align: center;">Salon Services</h1>
+  <p>At our salon, we offer a wide range of services to help you look and feel your best. Our experienced stylists are trained in the latest cutting and coloring techniques to give you the perfect look.</p>
+  <hr>
+  <h2>Hair Services</h2>
+  <ul>
+    <li>
+    	<button style="border: 0;background-color: transparent;color:#002b36 ;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Haircuts for men, women, and children</button>
+		<div class="collapse" id="collapseExample">
+		  <div class="card card-body">
+		    Haircuts for men include short styles such as buzz cuts, crew cuts, and side parts, longer hairstyles such as the quiff, comb over, or fringe. Haircuts for women include short pixie cuts, flowing locks, bobs, lobs, and layered cuts. Styles for boys include short cuts like buzz cuts and crew cuts and for girls pigtails, braids, or long hair with bangs.
+		  </div>
+		</div>
+	</li>
+        <li>
+    	<button style="border: 0;background-color: transparent;color:black;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">Color services, including highlights, lowlights, and full color</button>
+		<div class="collapse" id="collapseExample1">
+		  <div class="card card-body">
+		    Highlights can be subtle or more dramatic, depending on the desired look. Full color can be done to cover gray hair, change the natural color, or to achieve a specific color.
+		  </div>
+		</div>
+	</li>
+    <li>
+    	<button style="border: 0;background-color: transparent;color:black;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">Special occasion hair, including updos and blowouts</button>
+		<div class="collapse" id="collapseExample2">
+		  <div class="card card-body">
+		    Updos are hairstyles that involve arranging the hair in an elegant or sophisticated manner, typically by pinning, braiding, or twisting the hair into an intricate design. A blowout is a hairstyle achieved by using a hair dryer and brush to style the hair into a smooth, sleek, and voluminous look.
+		  </div>
+		</div>
+	</li>
+  </ul>
+
+  <h2>Skin Care Services</h2>
+  <ul>
+    <li>
+    	<button style="border: 0;background-color: transparent;color:black;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">Facials</button>
+		<div class="collapse" id="collapseExample3">
+		  <div class="card card-body">
+		    Facials are a type of skin care treatment that typically includes a combination of cleansing, exfoliation, and moisturizing.They also include massages for the face, neck, and shoulders which help to increase blood circulation and promote relaxation.
+		  </div>
+		</div>
+	</li>
+    <li>
+    	<button style="border: 0;background-color: transparent;color:black;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">Waxing</button>
+		<div class="collapse" id="collapseExample4">
+		  <div class="card card-body">
+		    Waxing is a method of hair removal that involves applying a warm or room-temperature wax to the skin, then using a strip of cloth or paper to quickly remove the wax along with the hair.
+		  </div>
+		</div>
+	</li>
+    <li>
+    	<button style="border: 0;background-color: transparent;color:black;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">Threading</button>
+		<div class="collapse" id="collapseExample5">
+		  <div class="card card-body">
+		    Threading is a hair removal technique that involves the use of a thin cotton thread that is twisted and rolled over unwanted hair, plucking it from the root.
+		  </div>
+		</div>
+	</li>
+  </ul>
+
+  <h2>Nail Services</h2>
+  <ul>
+    <li>
+    	<button style="border: 0;background-color: transparent;color:black;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">Manicures and pedicures</button>
+		<div class="collapse" id="collapseExample6">
+		  <div class="card card-body">
+		    A manicure is a beauty treatment for the nails and hands. It involves shaping and polishing the nails, and also includes the application of nail polish, cuticle care, and a hand massage. A pedicure is a similar treatment for the nails and feet. It includes shaping and polishing the nails, and may also include the application of nail polish, cuticle care, and a foot massage.
+		  </div>
+		</div>
+	</li>
+    <li>
+    	<button style="border: 0;background-color: transparent;color:black;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">Gel and acrylic nails</button>
+		<div class="collapse" id="collapseExample7">
+		  <div class="card card-body">
+		    Gel nails are created by applying a gel-based product to the nails, then curing them under a UV or LED lamp.
+		    Acrylic nails are created by applying a mixture of liquid and powder acrylic to the nails, then shaping and filing the nails to the desired shape. 
+		  </div>
+		</div>
+	</li>
+  </ul>
+  <h2>Makeup Services</h2>
+  <ul>
+    <li>
+    	<button style="border: 0;background-color: transparent;color:black;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">Makeup application for special occasions</button>
+		<div class="collapse" id="collapseExample8">
+		  <div class="card card-body">
+		    A makeup artist will use a combination of foundation, concealer, powder, eyeshadow, eyeliner, mascara, blush, and lipstick or lip gloss to create a polished and glamorous look. Makeup for special occasions can vary depending on the event and the individual's personal style and preferences.
+		  </div>
+		</div>
+	</li>
+    <li>
+    	<button style="border: 0;background-color: transparent;color:black;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample9">Everyday Makeup Application</button>
+		<div class="collapse" id="collapseExample9">
+		  <div class="card card-body">
+		    Everyday makeup involves applying a light coverage foundation, concealer, powder, blush, mascara, and lip balm or lip gloss. Eye makeup can be minimal, such as a light application of eyeshadow and eyeliner, or left out entirely. The focus of everyday makeup is to create a natural and polished look, rather than a dramatic or bold look.
+		  </div>
+		</div>
+	</li>
+  </ul>
+  <p>
+  <p>We also offer packages for bridal parties and special events. Please contact us for more information and to schedule an appointment.</p>
+  <hr>
+</body>
+</html>
+{% endblock %}

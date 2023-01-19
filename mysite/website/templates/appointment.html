@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<html>
+<h2>View Appointments</h2>
+<head>
+    <meta charset="utf-8">
+  </head>
+<table>
+  <tr>
+    <th>Service</th>
+    <th>Price</th>
+    <th>Employee</th>
+  </tr>
+  {% for service in services%}
+  <tr>
+<!--     {% if service.service == 'Updo'%}
+      <td>{{ service.service}}</td>
+    {% endif%} -->
+    <td>{{ service.service}}</td>
+    <td>{{ service.price}}</td>
+    <td>{{ service.employee}}</td>
+    <!-- <td>{{ service.service}}</td> -->
+  </tr>
+  {%endfor%}
+</table>
+</html>
+{% endblock %}
